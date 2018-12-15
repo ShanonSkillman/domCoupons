@@ -2,23 +2,67 @@
 
 //And don't forget, please feel free to reach out for help. There is such a thing as a DOM question...
 
-//1. Target the h3 element with the id of 'disclaimer' and change the contents to the follow:
+//1. Target the h3 element with the id of 'disclaimer' and change the contents to the follow: var finePrint = 'Coupons VALID from Tuesday 12/4/2018 thru Saturday 6/29/2019. All sales FINAL. NO REFUNDS and EXCHANGES. And definitely NO RAINCHECKS! And ONLY POSITIVE reviews allowed on Social Media (FB, Instagram, Twitter, Yelp, etc.). And PLEASE Follow us on FB, Instagram, Twitter.'
+
+let finePrint = "Coupons VALID from Tuesday 12/4/2018 thru Saturday 6/29/2019. All sales FINAL. NO REFUNDS and EXCHANGES. And definitely NO RAINCHECKS! And ONLY POSITIVE reviews allowed on Social Media (FB, Instagram, Twitter, Yelp, etc.). And PLEASE Follow us on FB, Instagram, Twitter."
+
+const getDisclaimer = document.getElementById('disclaimer');
+getDisclaimer.innerHTML = finePrint;
 
 //2. Target the div elemenet with the id of 'brand1' and update the content to Nabisco.
 
+const cookies = 'Nabisco';
+
+const getBrand1 = document.getElementById('brand1');
+getBrand1.innerHTML = cookies;
+
 //3. Target the div element with the id of 'item1' and update the content with Cheeseburger Oreos. 
+
+const newContent = 'Cheeseburger Oreos'
+
+const getItem1 = document.getElementById('item1');
+getItem1.innerHTML = newContent;
 
 //4. Target the div element with the id of 'price1' and update the content to $8.99.
 
+const newPrice = '$8.99';
+
+const getPrice1 = document.getElementById('price1');
+getPrice1.innerHTML = newPrice;
+
 //5. Target the button element with the id of 'discount1' and update the content to Free fries with purchase!
+
+const newContentFries = 'Free fries with purchase!';
+
+const getDiscount1 = document.getElementById('discount1');
+getDiscount1.innerHTML = newContentFries;
 
 //6. Create a div element with the id of 'item2' and update the content to Hendrick's Gin. Append this element to William Grand & Sons div.
 
+const item2 = document.createElement('div');
+const brand2 = "Hendrick's Gin";
+const getNewBrand = document.getElementById('brand2');
+getNewBrand.innerHTML = brand2;
+
+
 //7. Create a div element with the id of 'price2' and update the content to $34.99. Append this element to the Hendrick's Gin div.
+
+const price2 = document.createElement('div');
+price2.id = 'price2';
+price2.innerHTML ='$34.99';
+getNewBrand.appendChild(price2);
 
 //8. Create a button element with the id of 'discount3' and give it a content of 50% OFF Axe body soap!. Append this element to the appropriate div class 'block3.
 
+const classBlock3 = document.getElementsByClassName('block3')
+const discount3 = document.createElement('Button');
+discount3.id = 'discount3';
+discount3.innerHTML = '50% OFF Axe body soap!';
+classBlock3[0].appendChild(discount3);
+
+
 //9. Target the div element with a class of 'item' for the Panda Express section and update the content to Orange Chicken.
+
 
 //10. Create a button element with a class of 'discount' and update the content to Free T-shirt and fortune cookie with purchase! Append this button to Panda Express section.
 
