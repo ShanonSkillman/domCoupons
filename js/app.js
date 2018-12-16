@@ -54,7 +54,7 @@ getNewBrand.appendChild(price2);
 
 //8. Create a button element with the id of 'discount3' and give it a content of 50% OFF Axe body soap!. Append this element to the appropriate div class 'block3.
 
-const classBlock3 = document.getElementsByClassName('block3')
+const classBlock3 = document.getElementsByClassName('block3');
 const discount3 = document.createElement('Button');
 discount3.id = 'discount3';
 discount3.innerHTML = '50% OFF Axe body soap!';
@@ -63,20 +63,63 @@ classBlock3[0].appendChild(discount3);
 
 //9. Target the div element with a class of 'item' for the Panda Express section and update the content to Orange Chicken.
 
+const newPandaExpress = document.getElementsByClassName('item');
+newPandaExpress[0].innerHTML = 'Orange Chicken';
+// console.log(newPandaExpress);
 
 //10. Create a button element with a class of 'discount' and update the content to Free T-shirt and fortune cookie with purchase! Append this button to Panda Express section.
 
+const block1 = document.getElementsByClassName('block1');
+const newButton = document.createElement('button');
+newButton.className = 'discount';
+newButton.innerHTML = 'Free T-shirt and fortune cookie with purchase!';
+block1[1].appendChild(newButton);
+
+
 //11. Target the div element with the class of 'brand' for the red hoodie section and update the content to Uniqlo.
+
+const redHoodie = document.getElementsByClassName('brand');
+redHoodie[1].innerHTML = 'Uniqlo';
+// console.log(redHoodie[1]);
 
 //12. Target the div element with the class of 'price' for the red hoodie section and update the content to 10,000. 
 
+const redHoodiePrice = document.getElementsByClassName('price');
+redHoodiePrice[1].innerHTML = '$10,000';
+// console.log(redHoodiePrice[1])
+
 //13. Create a div element with the class of 'brand' and give it a content of Hifiman Shangri-La. Append this element in the headphones section. 
+
+const headphonesBrand = document.createElement('div');
+headphonesBrand.className = 'brand';
+// console.log(headphones)
+const block3 = document.getElementsByClassName('block3')
+block3[1].appendChild(headphonesBrand) 
+// console.log(block3[1])
+headphonesBrand.innerHTML = 'Hifiman Shangri-La'
+
 
 //14. Create a div element with the class of 'item' and give it a content of Electronstatic Headphones. Append this element in the headphones section. 
 
+const headphonesItem = document.createElement('div');
+headphonesItem.className = 'item';
+headphonesItem.innerHTML = 'Electronstatic Headphones';
+block3[1].appendChild(headphonesItem);
+// console.log(headphonesItem);
+
 //15. Create a div element with the class of 'price' and give it a content of $18,000. Append this element in the headphones section.
 
+const headphonesPrice = document.createElement('div');
+headphonesPrice.className = 'price';
+headphonesPrice.innerHTML = '$18,000';
+block3[1].appendChild(headphonesPrice);
+
 //16. Create a button element with the class of 'discount' and give it a content of Free Barry Manilow CD with purchase! Append this element in the headphones section.
+
+const headphoneButton = document.createElement('button');
+headphoneButton.className = 'discount';
+headphoneButton.innerHTML = 'Free Barry Manilow CD with purchase!';
+block3[1].appendChild(headphoneButton);
 
 //17. For the Unicorn Slippers, change the contents for each element to the following: 
 //div.brand = H&M
@@ -84,17 +127,35 @@ classBlock3[0].appendChild(discount3);
 //div.price = $21.99
 // button.discount = Free knee-high tube socks with purchase!
 
+block1[2].children[2].innerHTML = 'H&M';
+block1[2].children[3].innerHTML = 'Unicorn-Head Slippers';
+block1[2].children[4].innerHTML = '$21.99';
+block1[2].children[5].innerHTML = 'Free knee-high tube socks with purchase!'
+console.log(block1[2].children)
+
 //18. For the Doritos, change the contents for each element to the following:
 //div.brand = Frito Lay
 //div.item =  Poppin' Jalapeno Doritos
 //div.price = $7.77
 // button.discount = 33% OFF any 6 pack Budweiser or Bud Light.
+const block2 = document.getElementsByClassName('block2')
+const Doritos = block2[2].children 
+Doritos[2].innerHTML = 'Frito Lay'
+Doritos[3].innerHTML = "Poppin' Jalapeno Doritos"
+Doritos[4].innerHTML = '$7.77'
+Doritos[5].innerHTML = "33% OFF any 6 pack Budweiser or Bud Light."
 
 //19. For the Pug, change the contents for each element to the following:
 //div.brand = Any Dog Breeder
 //div.item =  Baby Puggy
 //div.price = Priceless
 // button.discount = No Discounts. This cutie is worth every penny!
+
+const pug = classBlock3[2].children
+pug[2].innerHTML = 'Any Dog Breeder'
+pug[3].innerHTML = 'Baby Puggy'
+pug[4].innerHTML = 'Priceless'
+pug[5].innerHTML = 'No Discounts. This cutie is worth every penny!'
 
 //Final Boss 
 //Create your own product for the last three sections.
