@@ -159,3 +159,72 @@ pug[5].innerHTML = 'No Discounts. This cutie is worth every penny!'
 
 //Final Boss 
 //Create your own product for the last three sections.
+
+// const item2 = document.createElement('div');
+// const brand2 = "Hendrick's Gin";
+// const getNewBrand = document.getElementById('brand2');
+// getNewBrand.innerHTML = brand2;
+
+// item1
+const itemImg = document.getElementsByTagName('img')
+itemImg[10].src = 'https://img.taste.com.au/6CgraiFM/w720-h480-cfill-q80/taste/2017/12/roasted-peach-sour-cream-ice-cream-taste_1980x1320-133837-1.jpg'
+
+const getBrand = document.getElementsByClassName('brand');
+getBrand[6].innerHTML = "Happy Ice Cream";
+
+const getItem = document.getElementsByClassName('item');
+getItem[6].innerHTML = "Tasty Treats";
+
+const getPrice = document.getElementsByClassName('price');
+getPrice[6].innerHTML = "$Y0ur.$0ul";
+
+const getButton = document.getElementsByClassName('discount');
+getButton[6].innerHTML = "Free life time of happiness with purchase!";
+
+// item2
+
+itemImg[11].src = 'https://www.allaboutunicorns.com/images/unicorn-01.jpg';
+
+const brandDiv = document.createElement('div');
+brandDiv.className = 'brand';
+brandDiv.innerHTML = 'Uni-Corney';
+block2[3].appendChild(brandDiv);
+
+const itemDiv = document.createElement('div');
+itemDiv.className = 'item';
+itemDiv.innerHTML = 'Pet Unicorn';
+block2[3].appendChild(itemDiv);
+
+const priceDiv = document.createElement('div');
+priceDiv.className = 'price';
+priceDiv.innerHTML = '$1 Galaxy';
+block2[3].appendChild(priceDiv);
+
+const unicornButton = document.createElement('button');
+unicornButton.className = 'discount';
+unicornButton.innerHTML = 'Free ride over the rainbow! (With purchase)';
+block2[3].appendChild(unicornButton);
+
+// item3
+
+itemImg[12].src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW55Z7bk2XiufSYpNN2VlCAxAcHCviZoRJpn6RVuYVJBO_hXTwIw';
+
+const newBrandDiv = document.createElement('div');
+newBrandDiv.className = 'brand';
+newBrandDiv.innerHTML = 'Knowledge is Power';
+block3[3].appendChild(newBrandDiv);
+
+const newItemDiv = document.createElement('div');
+newItemDiv.className = 'item';
+newItemDiv.innerHTML = 'The Fountain of Youth & Knowledge';
+block3[3].appendChild(newItemDiv);
+
+const newPriceDiv = document.createElement('div');
+newPriceDiv.className = 'price';
+newPriceDiv.innerHTML = '$1 Cup of Coffee';
+block3[3].appendChild(newPriceDiv);
+
+const knowButton = document.createElement('button');
+knowButton.className = 'discount';
+knowButton.innerHTML = 'Free Naptime with Proof of Purchase';
+block3[3].appendChild(knowButton);
